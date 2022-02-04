@@ -1,12 +1,14 @@
 # Knowledge Representation on the Web 2022
 
-Some interesting use cases with activity area (arts, cultural heritage, automotive, .. ), application areas (content discovery, data integration, improved search, ...), benefits and a list of specific technologies used (RDF(S), OWL, vocabularies, etc.) 
-https://www.w3.org/2001/sw/sweo/public/UseCases/
-
 
 Assignment 1: RDF, RDFS and OWL
+Goal: create a webapplication for a restaurant to help chefs manage their recipes. 
+
 part 1: RDF (discussed in lecture 2) 
-part 2: RDFS (discussed in lecture 3) 
-part 3: OWL (discussed in lecture 4) 
+Go through the notebook [rdf-tutorial](rdf-tutorial.ipynb)
+part 2: RDFS (discussed in lecture 3) (to be updated) 
+Go through the notebook [rdfs-tutorial](rdfs-tutorial.ipynb)
+part 3: OWL (discussed in lecture 4) (to be updated)
+Try out the notebook [OWL-tutorial](OWL-tutorial.ipynb) 
 
-
+The ./data/ingredients.rdf and ./data/recipes.rdf are based on the github repo: https://github.com/foodkg/foodkg.github.io.git
