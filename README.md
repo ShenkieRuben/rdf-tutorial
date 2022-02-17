@@ -2,7 +2,7 @@
 
 
 Assignment 1: RDF, RDFS and OWL
-Goal: create a webapplication for a restaurant to help chefs manage their recipes. 
+Goal: create a webapplication for a restaurant to help chefs manage their recipes, and help radio program makers with the management of their music database. 
 
 part 1: RDF (discussed in lecture 2) 
 Go through the notebook [rdf-tutorial](rdf-tutorial.ipynb)
