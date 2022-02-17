@@ -14,5 +14,6 @@ part 3: OWL (discussed in lecture 4) (to be updated)
 Try out the notebook [OWL-tutorial](OWL-tutorial.ipynb) 
 
 The ./data/ingredients.rdf and ./data/recipes.rdf are based on the github repo: https://github.com/foodkg/foodkg.github.io.git
+
 The ./data/musicoset_metadata/ files are downloaded from: https://marianaossilva.github.io/DSW2019/#tables
 
