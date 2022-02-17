@@ -1,0 +1,942 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ind: <http://purl.org/heals/ingredient/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sm: <https://www.omg.org/techprocess/ab/SpecificationMetadata/> .
+@prefix wtm: <http://purl.org/heals/food/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ind:AlmondMeal a obo:FOODON_03400662,
+        obo:FOODON_03400685,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "almond meal" ;
+    dcterms:source "Wikipedia, \"Almond meal.\" [Online]. Available:https://en.wikipedia.org/wiki/Almond_meal. [Accessed: Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "25"^^xsd:nonNegativeInteger ;
+    skos:definition "an ingredient made from ground up almonds" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:AppleCiderVinegar a obo:FOODON_03400760,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "apple cider vinegar" ;
+    dcterms:source "Wikipedia, \"Apple cider vinegar.\" [Online]. Available: https://en.wikipedia.org/wiki/Apple_cider_vinegar. [Accessed: Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "a vinegar made from fermented apple juice" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Bacon a obo:FOODON_03400667,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "bacon" ;
+    dcterms:source "Dictionary.com, \"bacon.\" [Online]. Available: https://www.dictionary.com/browse/bacon. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "the back and sides of the hog, salted and dried or smoked, usually sliced thin and fried for food" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:BakersYeast a wtm:Ingredient,
+        wtm:Yeast,
+        owl:NamedIndividual ;
+    rdfs:label "baker's yeast" ;
+    dcterms:source "Wikipedia, \"Baker's yeast.\" [Online]. Available: https://en.wikipedia.org/wiki/Baker%27s_yeast. [Accessed: Nov. 22, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "35"^^xsd:nonNegativeInteger ;
+    skos:definition "the strains of yeast commonly used as a leavening agent in baking bread and bakery products, where it converts the fermentable sugars present in the dough into carbon dioxide and ethanol" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:BakingPowder a wtm:ChemicalFoodProduct,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "baking powder" ;
+    dcterms:source "\"Baking powder,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/baking%20powder. [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a powder used as a leavening agent in making baked goods (such as quick breads) that typically consists of sodium bicarbonate, an acidic substance (such as cream of tartar), and starch or flour" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:BakingSoda a wtm:ChemicalFoodProduct,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "baking soda" ;
+    dcterms:source "\"Baking soda,\" the free dictionary. [Online]. Available: https://www.thefreedictionary.com/baking+soda [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a white crystalline compound, NaHCO3, chemically known as sodium bicarbonate, that is used especially in beverages and as a leavening agent to make baked goods" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:BalsamicVinegar a obo:FOODON_03400760,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "balsamic vinegar" ;
+    dcterms:source "\"Balsamic vinegar,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/balsamic%20vinegar. [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "an aged Italian vinegar made from the must of white grapes" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Banana a obo:FOODON_03400673,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "banana" ;
+    dcterms:source "\"Banana ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/banana. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "55"^^xsd:nonNegativeInteger ;
+    skos:definition "an elongated usually tapering tropical fruit with soft pulpy flesh enclosed in a soft usually yellow rind" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Basil a obo:FOODON_03400688,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "basil" ;
+    dcterms:source "\"Basil,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/basil [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "the dried or fresh leaves of a basil used especially as a seasoning" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Beef a wtm:Ingredient,
+        wtm:MeatFromCow,
+        owl:NamedIndividual ;
+    rdfs:label "beef" ;
+    dcterms:source "\"Beef,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/beef. [Accessed: 13-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "the flesh of an adult domestic bovine used as food" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:BeefBouillon a obo:FOODON_03400667,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "beef bouillon" ;
+    dcterms:source "EATBYDATE, \"Beef Broth Substitutes,\" 2012. [Online]. Available: https://www.eatbydate.com/substitutions/beef-broth-substitute/. [Accessed Oct. 27, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "an ingredient that can be combined with water to substitute for beef stock" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Bitter a wtm:Flavor,
+        owl:NamedIndividual ;
+    rdfs:label "bitter" ;
+    dcterms:source "\"Bitter,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/bitter. [Accessed: 18-Oct-2018]." ;
+    skos:definition "being or inducing the one of the four basic taste sensations that is peculiarly acrid acrid, astringent, or disagreeable and suggestive of an infusion of hops" ;
+    skos:scopeNote "used as a flavor" .
+
+ind:BlackPepper a obo:FOODON_03400689,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "black pepper" ;
+    dcterms:source "\"Black Pepper,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/black pepper. [Accessed: 13-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "a spice that consists of the dried berry of an Indian vine ground with the black husk still on" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:BlackPeppercorn a obo:FOODON_03400689,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "black peppercorn" ;
+    dcterms:source "\"Peppercorn ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/peppercorn. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "a dried berry of the black pepper" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Blueberry a obo:FOODON_03400671,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "blueberry" ;
+    dcterms:source "Dictionary.com, \"blueberry.\" [Online]. Available: https://www.dictionary.com/browse/blueberry. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "25"^^xsd:nonNegativeInteger ;
+    skos:definition "the edible, usually bluish berry of various shrubs belonging to the genus Vaccinium, of the heath family" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:BrownSugar a obo:FOODON_03400662,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "brown sugar" ;
+    dcterms:source "\"Brown Surgar,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/brown sugar. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "70"^^xsd:nonNegativeInteger ;
+    skos:definition "soft sugar whose crystals are covered by a film of refined dark syrup" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Butter a obo:FOODON_03400774,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "butter" ;
+    dcterms:source "\"Butter ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/butter. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a solid emulsion of fat globules, air, and water made by churning milk or cream and used as food" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Cabbage a obo:FOODON_03400675,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "cabbage" ;
+    dcterms:source "\"Cabbage ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/cabbage. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    skos:definition "any of several brassicas of European origin especially a leafy garden plant with a short stem and a dense globular head of usually green leaves that is used as a vegetable" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:CaneSugar a obo:FOODON_03400662,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "cane sugar" ;
+    dcterms:source "Dictionary.com, \"cane sugar.\" [Online]. Available: https://www.dictionary.com/browse/cane-sugar. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "70"^^xsd:nonNegativeInteger ;
+    skos:definition "sugar obtained from sugar cane, identical with that obtained from the sugar beet" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:CanolaOil a obo:FOODON_03400764,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "canola oil" ;
+    dcterms:source "Wikipedia, \"Canola oil.\" [Online]. Available: https://en.wikipedia.org/wiki/Canola_oil. [Accessed: Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a vegetable oil derived from a variety of rapeseed that is low in erucic acid" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Carrot a obo:FOODON_03400681,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "carrot" ;
+    dcterms:source "\"Carrot,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/carrot. [Accessed: 13-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    skos:definition "a biennial herb with a usually orange spindle-shaped edible root" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Celsius a wtm:TemperatureMeasurement,
+        owl:NamedIndividual ;
+    rdfs:label "celsius" ;
+    dcterms:source "relating to, conforming to, or having the international thermometric scale on which the interval between the triple point of water and the boiling point of water is divided into 99.99 degrees with 0.01° representing the triple point and 100° the boiling point" ;
+    skos:definition "relating to, conforming to, or having the international thermometric scale on which the interval between the triple point of water and the boiling point of water is divided into 99.99 degrees with 0.01° representing the triple point and 100° the boiling point" ;
+    skos:editorialNote "A temperature scale that is used in recipes" ;
+    skos:scopeNote "value of temperature" .
+
+ind:ChayoteSquash a obo:FOODON_03400676,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "chayote squash" ;
+    dcterms:source "\"chayote,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/chayote. [Accessed: 1-Nov-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "50"^^xsd:nonNegativeInteger ;
+    skos:definition "pear-shaped fruit of a West Indian annual vine (Sechium edule) of the gourd family that is widely cultivated as a vegetable" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Cheese a obo:FOODON_03400775,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "cheese" ;
+    dcterms:source "Dictionary.com, \"cheese.\" [Online]. Available: https://www.dictionary.com/browse/cheese. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "the curd of milk separated from the whey and prepared in many ways as a food" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Chicken a wtm:Ingredient,
+        wtm:MeatFromChicken,
+        owl:NamedIndividual ;
+    rdfs:label "chicken" ;
+    dcterms:source "\"Chicken,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/chicken. [Accessed: 13-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "the common domestic fowl" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:ChickenBroth a obo:FOODON_03400667,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "chicken broth" ;
+    dcterms:source "vocabulary.com, \"chicken broth.\" [Online]. Available: https://www.vocabulary.com/dictionary/chicken%20broth. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten true ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a stock made with chicken" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:ChickenEgg a obo:FOODON_03400744,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "chicken egg" ;
+    dcterms:source "Dictionary.com, \"egg.\" [Online]. Available: https://www.dictionary.com/browse/egg. [Accessed Oct. 5, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "the roundish reproductive body produced by a female chicken" ;
+    skos:editorialNote "Only used to refer to the egg of a chicken. Other types of eggs will appear under separate labels in the ontology." ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:ChuckRoast a wtm:Ingredient,
+        wtm:MeatFromCow,
+        owl:NamedIndividual ;
+    rdfs:label "chuck roast" ;
+    dcterms:source "\"Chuck steak,\" WIKIPEDIA [Online]. Available: https://en.wikipedia.org/wiki/Chuck_steak [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a cut of beef and is part of the sub primal cut known as the chuck" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Cilantro a obo:FOODON_03400678,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "cilantro" ;
+    dcterms:source "Dictionary.com, \"cilantro.\" [Online]. Available: https://www.dictionary.com/browse/cilantro. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "the strong-scented leaves of the coriander plant, used in salads or to flavor and garnish food" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Clove a obo:FOODON_03400674,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "clove" ;
+    dcterms:source "\"Clove,\" WIKIPEDIA [Online]. Available: https://en.wikipedia.org/wiki/Clove [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "the aromatic flower buds of a tree in the family Myrtaceae" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:CocoaPowder a obo:FOODON_03400663,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "cocoa powder" ;
+    dcterms:source "The Spruce Eats, \"What Is Cocoa Powder?,\"  2018.  [Online]. Available: https://www.thespruceeats.com/what-is-cocoa-powder-520351. [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "20"^^xsd:nonNegativeInteger ;
+    skos:definition "an unsweetened powder produced by grinding the seeds of the fruit of a tropical evergreen tree called the cacao, or cocoa tree" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Coconut a obo:FOODON_03400670,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "coconut" ;
+    dcterms:source "Dictionary.com, \"coconut.\" [Online]. Available: https://www.dictionary.com/browse/coconut. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "35"^^xsd:nonNegativeInteger ;
+    skos:definition "the large, hard-shelled seed of the coconut palm, lined with a white edible meat, and containing a milky liquid" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:CoconutMilk a obo:FOODON_03400662,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "coconut milk" ;
+    dcterms:source "Dictionary.com, \"coconut milk.\" [Online]. Available: https://www.dictionary.com/browse/coconut-milk. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "40"^^xsd:nonNegativeInteger ;
+    skos:definition "the clear, potable liquid contained within the young hollow seed of the coconut palm" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:CornSyrup a obo:FOODON_03400662,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "corn syrup" ;
+    dcterms:source "Dictionary.com, \"corn syrup.\"  [Online]. Available: https://www.dictionary.com/browse/corn-syrup. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "115"^^xsd:nonNegativeInteger ;
+    skos:definition "syrup prepared from corn" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:CornedBeef a obo:FOODON_03400667,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "corned beef" ;
+    dcterms:source "\"Corned beef ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/corned beef. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "beef that has been preserved in salt water" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Cornstarch a obo:FOODON_03400662,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "cornstarch" ;
+    dcterms:source "\"Cornstarch ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/cornstarch. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGlycemicIndex false,
+        "95"^^xsd:nonNegativeInteger ;
+    skos:definition "starch made from corn and used in foods as a thickening agent, in making corn syrup and sugars, and in the manufacture of adhesives and sizes for paper and textiles" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:CowMilk a wtm:Ingredient,
+        wtm:MilkFromCow,
+        owl:NamedIndividual ;
+    rdfs:label "cow milk" ;
+    dcterms:source "Wikipedia, \"Milk.\" [Online]. Available: https://en.wikipedia.org/wiki/Milk#Cow's_milk. [Accessed: Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "30"^^xsd:nonNegativeInteger ;
+    skos:definition "milk obtained from a cow" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Creamy a wtm:Texture,
+        owl:NamedIndividual ;
+    rdfs:label "creamy" ;
+    dcterms:source "\"Creamy,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/creamy. [Accessed: 18-Oct-2018]." ;
+    skos:definition "resembling cream (as in color, texture, or taste)" ;
+    skos:scopeNote "used as a texture" .
+
+ind:Crumbly a wtm:Texture,
+        owl:NamedIndividual ;
+    rdfs:label "crumbly" ;
+    dcterms:source "\"Crumbly,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/crumbly. [Accessed: 18-Oct-2018]." ;
+    skos:definition "easily crumbled" ;
+    skos:scopeNote "used as a texture" .
+
+ind:DriedCranberry a obo:FOODON_03400756,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "dried cranberry" ;
+    dcterms:source "Wikipedia, \"Dried cranberry.\" [Online]. Available: https://en.wikipedia.org/wiki/Dried_cranberry. [Accessed: Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "30"^^xsd:nonNegativeInteger ;
+    skos:definition "an ingredient made by partially dehydrating fresh cranberries" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Fahrenheit a wtm:TemperatureMeasurement,
+        owl:NamedIndividual ;
+    rdfs:label "fahrenheit" ;
+    dcterms:source "\"Fahrenheit,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/Fahrenheit. [Accessed: 12-Oct-2018]." ;
+    skos:definition "relating or conforming to a thermometric scale on which under standard atmospheric pressure the boiling point of water is at 212 degrees above the zero of the scale, the freezing point is at 32 degrees above zero, and the zero point approximates the temperature produced by mixing equal quantities by weight of snow and common salt" ;
+    skos:editorialNote "A temperature scale that is used in recipes" ;
+    skos:scopeNote "value of temperature" .
+
+ind:Garlic a obo:FOODON_03400674,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "garlic" ;
+    dcterms:source "\"Garlic ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/garlic. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "30"^^xsd:nonNegativeInteger ;
+    skos:definition "widely cultivated for its pungent compound bulbs much used in cookery" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:GlutenFreeFlour a obo:FOODON_03400759,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "gluten free flour" ;
+    dcterms:source "Baking Bites, \"What is Gluten Free Flour?\"[Online]. Available: http://bakingbites.com/2013/01/what-is-gluten-free-flour/. [Accessed Nov. 1, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "95"^^xsd:nonNegativeInteger ;
+    wtm:substitutesFor ind:AllPurposeFlour ;
+    skos:definition "flours that are made of non-gluten containing products" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Gooey a wtm:Texture,
+        owl:NamedIndividual ;
+    rdfs:label "gooey" ;
+    dcterms:source "\"Gooey,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/gooey. [Accessed: 18-Oct-2018]." ;
+    skos:definition "a viscid or sticky substance" ;
+    skos:scopeNote "used as a texture" .
+
+ind:Greasy a wtm:Texture,
+        owl:NamedIndividual ;
+    rdfs:label "greasy" ;
+    dcterms:source "\"Greasy,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/greasy. [Accessed: 18-Oct-2018]." ;
+    skos:definition "containing an unusual amount of grease" ;
+    skos:scopeNote "used as a texture" .
+
+ind:GreenOnion a obo:FOODON_03400674,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "green onion" ;
+    dcterms:source "Dictionary.com, \"green onion.\" [Online]. Available: https://www.dictionary.com/browse/green-onion. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    skos:definition "a young onion with a slender green stalk and a small bulb, used as a table vegetable, usually raw,especially in salads; scallion" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:GreenPepper a obo:FOODON_03400677,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "green pepper" ;
+    dcterms:source "Dictionary.com, \"green pepper.\" [Online]. Available: https://www.dictionary.com/browse/green-pepper. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    skos:definition "the mild-flavored, unripe fruit of the bell or sweet pepper, Capsicum annuum grossum, used as a greenvegetable" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Honey a obo:FOODON_03400666,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "honey" ;
+    dcterms:source "\"Honey,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/honey. [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "60"^^xsd:nonNegativeInteger ;
+    skos:definition "a sweet viscid material elaborated out of the nectar of flowers in the honey sac of various bees" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Hour a wtm:TimeMeasurement,
+        owl:NamedIndividual ;
+    rdfs:label "hour" ;
+    dcterms:source "Dictionary.com, \"hour.\" [Online]. Available: https://www.dictionary.com/browse/hour. [Accessed Oct. 5, 2018]" ;
+    skos:altLabel "hours" ;
+    skos:definition "the measured or measurable period during which an action, process, or condition exists or continues" ;
+    skos:scopeNote "value of time" .
+
+ind:Kamut a obo:FOODON_03400683,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "kamut" ;
+    dcterms:source "Kamut, \"The grain,\" 2018. [Online]. Available: https://www.kamut.com/en/discover/the-grain. [Accessed Oct. 20, 2018]" ;
+    wtm:hasGluten true ;
+    wtm:hasGlycemicIndex "45"^^xsd:nonNegativeInteger ;
+    skos:definition "khorasan wheat (kamut) is an ancient grain" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:KamutFlour a obo:FOODON_03400759,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "kamut flour" ;
+    dcterms:source "foodrepublic.com, \"What Is Kamut?\" [Online]. Available: http://www.foodrepublic.com/2013/04/15/what-is-kamut/. [Accessed Nov.9, 2018]" ;
+    wtm:hasGluten true ;
+    wtm:hasGlycemicIndex "45"^^xsd:nonNegativeInteger ;
+    wtm:substitutesFor ind:AllPurposeFlour ;
+    skos:definition "flour made from an ancient grain also known as khorsan wheat" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Lamb a wtm:Ingredient,
+        wtm:MeatFromLamb,
+        owl:NamedIndividual ;
+    rdfs:label "lamb" ;
+    dcterms:source "\"Lamb,\" WIKIPEDIA [Online]. Available: https://en.wikipedia.org/wiki/Lamb [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "the meat of sheep" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:LemonJuice a obo:FOODON_03400766,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "lemon juice" ;
+    dcterms:source "\"lemon juice,\" the free dictionary. [Online]. Available: https://www.thefreedictionary.com/lemon+juice. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "20"^^xsd:nonNegativeInteger ;
+    skos:definition "usually freshly squeezed juice of lemons" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Mayonnaise a obo:FOODON_03400776,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "mayonnaise" ;
+    dcterms:source "Dictionary.com, \"mayonnaise.\" [Online]. Available: https://www.dictionary.com/browse/mayonnaise. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten true ;
+    wtm:hasGlycemicIndex "60"^^xsd:nonNegativeInteger ;
+    skos:definition "a thick dressing of egg yolks, vinegar or lemon juice, oil, and seasonings, used for salads, sandwiches,vegetable dishes, etc" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Minute a wtm:TimeMeasurement,
+        owl:NamedIndividual ;
+    rdfs:label "minute" ;
+    dcterms:source "Dictionary.com, \"minute.\" [Online]. Available: https://www.dictionary.com/browse/minute?s=t. [Accessed Oct. 5, 2018]" ;
+    skos:altLabel "minutes" ;
+    skos:definition "the sixtieth part (1/60) of an hour; sixty seconds" ;
+    skos:scopeNote "value of time" .
+
+ind:Moist a wtm:Texture,
+        owl:NamedIndividual ;
+    rdfs:label "moist" ;
+    dcterms:source "\"Moist,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/moist. [Accessed: 18-Oct-2018]." ;
+    skos:definition "slightly or moderately wet" ;
+    skos:scopeNote "used as a texture" .
+
+ind:Mushy a wtm:Texture,
+        owl:NamedIndividual ;
+    rdfs:label "mushy" ;
+    dcterms:source "\"Mushy,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/mushy. [Accessed: 18-Oct-2018]." ;
+    skos:definition "having the consistency of mush" ;
+    skos:scopeNote "used as a texture" .
+
+ind:Nutty a wtm:Flavor,
+        owl:NamedIndividual ;
+    rdfs:label "nutty" ;
+    dcterms:source "\"Nutty,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/nutty. [Accessed: 12-Oct-2018]." ;
+    skos:definition "having a flavor like that of nuts" ;
+    skos:editorialNote "A property of flavor that will aid in the substitution decision making of the ontology" ;
+    skos:scopeNote "used as a flavor" .
+
+ind:Oat a obo:FOODON_03400683,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "oat" ;
+    dcterms:source "Dictionary.com, \"oat.\" [Online]. Available: https://www.dictionary.com/browse/oat. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "40"^^xsd:nonNegativeInteger ;
+    skos:definition "a cereal grass, Avena sativa, cultivated for its edible seed" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:OliveOil a obo:FOODON_03400764,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "olive oil" ;
+    dcterms:source "\"Olive oil,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/olive%20oil. [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a pale yellow to yellowish-green nondrying oil that is obtained from olives, is high in monounsaturated fat, and is used chiefly as a salad oil and in cooking" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Oregano a obo:FOODON_03400688,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "oregano" ;
+    dcterms:source "\"Oregano,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/oregano [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "a bushy perennial mint (Origanum vulgare) with leaves that are used as a seasoning and a source of aromatic oil" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Paprika a obo:FOODON_03400688,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "paprika" ;
+    dcterms:source "\"Paprika ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/paprika. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    skos:definition "a usually mild red condiment consisting of the dried finely ground pods of various sweet peppers" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Parsley a obo:FOODON_03400688,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "parsley" ;
+    dcterms:source "\"Parsley ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/parsley. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "a European biennial herb of the carrot family widely grown for its finely dissected curly or flat leaves which are used as an herb or garnish" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Peanut a obo:FOODON_03400686,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "peanut" ;
+    dcterms:source "Dictionary.com, \"peanut.\" [Online]. Available: https://www.dictionary.com/browse/peanut. [Accessed Oct. 5, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    skos:definition "the pod or the enclosed edible seed of the plant, Arachis hypogaea, of the legume family: the pod is forced underground in growing, where it ripens" ;
+    skos:editorialNote "This definition refers to the nuts of the plant as used as an ingredient in a recipe." ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Potato a obo:FOODON_03400681,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "potato" ;
+    dcterms:source "\"Potato,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/potato. [Accessed: 13-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "70"^^xsd:nonNegativeInteger ;
+    skos:definition "a memeber of the nightshade family widely cultivated for its edible starchy tuber" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Rosemary a obo:FOODON_03400688,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "rosemary" ;
+    dcterms:source "\"Rosemary ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/rosemary. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "a fragrant shrubby Mediterranean mint having grayish-green needlelike leaves used as a seasoning" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Salt a wtm:ChemicalFoodProduct,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "salt" ;
+    dcterms:source "\"Salt,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/salt. [Accessed: 13-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a crystalline compound NaCl that consists of sodium chloride, is abundant in nature, and is used especially to season or preserve food or in industry" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Salty a wtm:Flavor,
+        owl:NamedIndividual ;
+    rdfs:label "salty" ;
+    dcterms:source "\"Salty,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/salty. [Accessed: 18-Oct-2018]." ;
+    skos:definition "of, seasoned with, or containing salt" ;
+    skos:scopeNote "used as a flavor" .
+
+ind:SesameOil a obo:FOODON_03400764,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "sesame oil" ;
+    dcterms:source "Dictionary.com, \"sesame oil.\" [Online]. Available: https://www.dictionary.com/browse/sesame-oil. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a yellow oil expressed from the seeds of the sesame, used in cooking, as a vehicle for medicines, and in the manufacture of margarine, soap, and cosmetics" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Smoky a wtm:Flavor,
+        owl:NamedIndividual ;
+    rdfs:label "smoky" ;
+    dcterms:source "\"Smoky,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/smoky. [Accessed: 18-Oct-2018]." ;
+    skos:definition "suggestive of smoke especially in flavor or odor" ;
+    skos:scopeNote "used as a flavor" .
+
+ind:SoySauce a obo:FOODON_03400663,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "soy sauce" ;
+    dcterms:source "Dictionary.com, \"soy sauce.\" [Online]. Available: https://www.dictionary.com/browse/soy-sauce. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "a salty, fermented sauce prepared from soybeans, used in East Asian cuisine" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Spicy a wtm:Flavor,
+        owl:NamedIndividual ;
+    rdfs:label "spicy" ;
+    dcterms:source "\"Spicy,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/spicy. [Accessed: 18-Oct-2018]." ;
+    skos:definition "having the quality, flavor, or fragrance of spice" ;
+    skos:scopeNote "used as a flavor" .
+
+ind:Sweet a wtm:Flavor,
+        owl:NamedIndividual ;
+    rdfs:label "sweet" ;
+    dcterms:source "\"Sweet,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/sweet. [Accessed: 18-Oct-2018]." ;
+    skos:definition "being or inducing the one of the four basic taste sensations that is typically induced by disaccharides and is mediated especially by receptors in taste buds at the front of the tongue" ;
+    skos:scopeNote "used as a flavor" .
+
+ind:TapiocaFlour a obo:FOODON_03400662,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "tapioca flour" ;
+    dcterms:source "\"Tapioca,\" The Free Dictionary. [Online]. Available: https://www.thefreedictionary.com/Tapioca+flour. [Accessed Nov.9, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "85"^^xsd:nonNegativeInteger ;
+    skos:definition "a flour made from the tapioca plant" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Tarragon a obo:FOODON_03400688,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "tarragon" ;
+    dcterms:source "\"Tarragon ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/tarragon. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "a small widely cultivated perennial artemisia (Artemisia dracunculus) having aromatic narrow usually entire leaves, its leaves used as a seasoning" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Tart a wtm:Flavor,
+        owl:NamedIndividual ;
+    rdfs:label "tart" ;
+    dcterms:source "\"Tart,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/tart. [Accessed: 18-Oct-2018]." ;
+    skos:definition "agreeably sharp or acid to the taste" ;
+    skos:scopeNote "used as a flavor" .
+
+ind:Thyme a obo:FOODON_03400688,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "thyme" ;
+    dcterms:source "\"Thyme,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/thyme. [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "any of a genus (Thymus) of Eurasian mints with small pungent aromatic leaves" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Tomato a obo:FOODON_03400677,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "tomato" ;
+    dcterms:source "\"Tomato,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/tomato. [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "30"^^xsd:nonNegativeInteger ;
+    skos:definition "the usually large, rounded, edible, pulpy berry of an herb (genus Solanum) of the nightshade family native to South America that is typically red but may be yellow, orange, green, or purplish in color and is eaten raw or cooked as a vegetable" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:User15 a wtm:User,
+        owl:NamedIndividual ;
+    rdfs:label "user 15" ;
+    dcterms:source "Techopedia, \"User Identification (User ID),\" 2018. [Online]. Available: https://www.techopedia.com/definition/12552/user-identification-user-id. [Accessed Oct. 18, 2018]" ;
+    wtm:dislikes ind:Almond,
+        ind:Celery ;
+    wtm:forbids ind:Onion ;
+    wtm:isAllergicTo ind:Pecan ;
+    skos:definition "the user with ID 15" ;
+    skos:scopeNote "represents an individual user" .
+
+ind:VanillaExtract a obo:FOODON_03400662,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "vanilla extract" ;
+    dcterms:source "Wikipedia, \"Vanilla extract.\" [Online]. Available: https://en.wikipedia.org/wiki/Vanilla_extract. [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "a solution made by macerating and percolating vanilla pods in a solution of ethanol and water" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:VegetableOil a obo:FOODON_03400764,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "vegetable oil" ;
+    dcterms:source "\"Vegetable Oil ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/vegetable oil. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "an oil of plant origin" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Water a wtm:ChemicalFoodProduct,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "water" ;
+    dcterms:source "\"Water ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/water. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "0"^^xsd:nonNegativeInteger ;
+    skos:definition "the liquid that descends from the clouds as rain, forms streams, lakes, and seas, and is a major constituent of all living matter and that when pure is an odorless, tasteless, very slightly compressible liquid oxide of hydrogen H2O which appears bluish in thick layers, freezes at 0° C and boils at 100° C, has a maximum density at 4° C and a high specific heat, is feebly ionized to hydrogen and hydroxyl ions, and is a poor conductor of electricity and a good solvent" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:WhiteSugar a obo:FOODON_03400662,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "white sugar" ;
+    dcterms:source "\"Sugar,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/sugar. [Accessed: 1-Nov-2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "70"^^xsd:nonNegativeInteger ;
+    skos:definition "a sweet crystallizable material that consists wholly or essentially of sucrose, is colorless or white when pure tending to brown when less refined, is obtained commercially from sugarcane or sugar beet and less extensively from sorghum, maples, and palms, and is important as a source of dietary carbohydrate and as a sweetener and preservative of other foods" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:WhiteVinegar a obo:FOODON_03400662,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "white vinegar" ;
+    dcterms:source "Dictionary.com, \"vinegar.\" [Online]. Available: https://www.dictionary.com/browse/vinegar. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "5"^^xsd:nonNegativeInteger ;
+    skos:definition "a sour liquid consisting of dilute and impure acetic acid" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:WholeGrainMustard a obo:FOODON_03400663,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "whole grain mustard" ;
+    dcterms:source "TasteofHome, \"What Is Whole Grain Mustard?,\" 2018. [Online]. Available: https://www.tasteofhome.com/cooking-tips/ask-the-test-kitchen/what-is-whole-grain-mustard-. [Accessed Oct. 27 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "55"^^xsd:nonNegativeInteger ;
+    skos:definition "prepared mustard with visible mustard seeds" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:WholeWheatFlour a obo:FOODON_03400759,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "whole wheat flour" ;
+    dcterms:source "\"Whole Wheat Flour ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/whole wheat flour. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten true ;
+    wtm:hasGlycemicIndex "40"^^xsd:nonNegativeInteger ;
+    wtm:substitutesFor ind:AllPurposeFlour ;
+    skos:definition "flour that is ground from the whole grain and contains all the constituents of the wheat kernels" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind: a owl:Ontology ;
+    rdfs:label "What to Make Individuals" ;
+    dcterms:abstract "The WhatToMake Individuals Ontology contains the invididual recipes and food items used in those recipes that are available in the system. These individuals are defined using classes and properties that are defined in the WhatToMake Base Ontology."^^xsd:string ;
+    dcterms:contributor "Forest Eckhardt",
+        "Kevin Blissett",
+        "Miao Qi",
+        "Yarden Ne'eman" ;
+    dcterms:description "The goal of this project is to create a system capable of recommending recipes to a user subject to the ingredients that user has on hand and the time they want to spend cooking. The system should also be able to recommend best-matched substitutions for ingredients where appropriate in order to meet the user’s taste preferences or food allergy related needs. The users are allowed to specify the meal types (e.g. lunch) and course types (e.g. entree) in the request. If the users request not to have recipes that contain high Glycemic Index (GI) ingredients, the system will avoid offering these high glycemic recipes in the recommendations." ;
+    dcterms:license "http://opensource.org/licenses/MIT"^^xsd:anyURI ;
+    dcterms:modified "2019-04-12"^^xsd:date ;
+    dcterms:publisher "WhatToMake" ;
+    dcterms:references "https://tw.rpi.edu/web/Courses/Ontologies/2018/Project2/maintenance" ;
+    owl:imports wtm:,
+        <http://www.omg.org/techprocess/ab/SpecificationMetadata/> ;
+    owl:priorVersion "https://tw.rpi.edu/Courses/Ontologies/2018/WhatToMake/WhatToMake_Individuals/" ;
+    owl:versionIRI ind: ;
+    skos:changeNote "Changes to this ontology since the previous version include: update of ontology IRI" ;
+    sm:copyright "Copyright (c) 2018 Kevin Blissett, Forest Eckhardt, Yarden Ne'eman, Miao Qi" .
+
+ind:Celery a obo:FOODON_03400682,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "celery" ;
+    dcterms:source "\"Celery ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/celery. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    skos:definition "a European herb the carrot family specifically one of a cultivated variety with leafstalks eaten raw or cooked" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Onion a obo:FOODON_03400674,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "onion" ;
+    dcterms:source "\"Onion ,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/onion. [Accessed: 26-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    skos:definition "a widely cultivated Asian herb of the lily family with pungent edible bulbs" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:PumpkinSeed a obo:FOODON_03400686,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "pumpkin seed" ;
+    dcterms:source "\"pumpkin seed - Dictionary Definition,\" Vocabulary.com. [Online]. Available: https://www.vocabulary.com/dictionary/pumpkin seed. [Accessed: 12-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "10"^^xsd:nonNegativeInteger ;
+    wtm:substitutesFor ind:Walnut ;
+    skos:definition "the edible seed of a pumpkin" ;
+    skos:editorialNote "A potential substitution for members of the tree nut family" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:AllPurposeFlour a obo:FOODON_03400759,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "all purpose flour" ;
+    dcterms:source "\"Flour,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/flour. [Accessed: 13-Oct-2018]." ;
+    wtm:hasGluten true ;
+    wtm:hasGlycemicIndex "71"^^xsd:nonNegativeInteger ;
+    skos:definition "a product consisting of finely milled wheat" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Almond a obo:FOODON_03400685,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "almond" ;
+    dcterms:source "Dictionary.com, \"almond.\" [Online]. Available: https://www.dictionary.com/browse/almond. [Accessed Oct. 20, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    wtm:hasTexture ind:Crunchy ;
+    wtm:substitutesFor ind:Pecan,
+        ind:PumpkinSeed,
+        ind:Walnut ;
+    skos:definition "the nutlike kernel of the fruit of either of two trees, Prunus dulcis (sweet almond) or P. dulcis amara (bitter almond), which grow in warm temperate regions" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Crunchy a wtm:Texture,
+        owl:NamedIndividual ;
+    rdfs:label "crunchy" ;
+    dcterms:source "\"Crunchy,\" Dictionary.com. [Online]. Available: https://www.dictionary.com/browse/crunchy?s=t. [Accessed: 12-Oct-2018]." ;
+    skos:definition "crisp, brittle" ;
+    skos:editorialNote "This is a subclass of texture and is one of the textural components that could be considered for substitutions" ;
+    skos:scopeNote "used as a texture" .
+
+ind:Pecan a obo:FOODON_03400685,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "pecan" ;
+    dcterms:source "Dictionary.com, \"pecan.\" [Online]. Available: https://www.dictionary.com/browse/pecan. [Accessed Nov. 10, 2018]" ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    wtm:hasTexture ind:Crunchy ;
+    wtm:substitutesFor ind:Almond,
+        ind:Walnut ;
+    skos:definition "a tall hickory tree, Carya illinoinensis, of the southern U.S. and Mexico, cultivated for its oval, smooth-shelled, edible nuts" ;
+    skos:scopeNote "used as an ingredient" .
+
+ind:Walnut a obo:FOODON_03400685,
+        wtm:Ingredient,
+        owl:NamedIndividual ;
+    rdfs:label "walnut" ;
+    dcterms:source "\"Walnut,\" Merriam-Webster. [Online]. Available: https://www.merriam-webster.com/dictionary/walnut. [Accessed: 12-Oct-2018]." ;
+    wtm:hasGluten false ;
+    wtm:hasGlycemicIndex "15"^^xsd:nonNegativeInteger ;
+    wtm:hasTexture ind:Crunchy ;
+    wtm:substitutesFor ind:Almond,
+        ind:Pecan,
+        ind:PumpkinSeed ;
+    skos:definition "the furrowed nut of any of a genus (Juglans of the family Juglandaceae, the walnut family) of deciduous trees" ;
+    skos:editorialNote "Member of the tree nut family which is a common allergen" ;
+    skos:scopeNote "used as an ingredient" .
+
