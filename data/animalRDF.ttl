@@ -1,20 +1,29 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-"Animal" a rdfs:Class .
+<Animal> a rdfs:Class .
 
-<http://animal.com/Penguin> a "Animal" ;
+<http://animal.com/Chicken> a <Animal> ;
+    rdfs:label "Mary" ;
+    rdfs:subClassOf <Bipedidae> ;
+    foaf:age "9" .
+
+<http://animal.com/Penguin> a <Animal> ;
     rdfs:label "Ans" ;
-    rdfs:subClassOf "Bipedidae" ;
+    rdfs:subClassOf <Bipedidae> ;
     foaf:age "10" .
 
-<http://animal.com/Pig> a "Animal" ;
+<http://animal.com/Pig> a <Animal> ;
     rdfs:label "Billy" ;
-    rdfs:subClassOf "Quadruped" ;
+    rdfs:subClassOf <Quadruped> ;
     foaf:age "3" .
 
-<http://animal.com/Zebra> a "Animal" ;
+<http://animal.com/Zebra> a <Animal> ;
     rdfs:label "Jozef" ;
-    rdfs:subClassOf "Quadruped" ;
+    rdfs:subClassOf <Quadruped> ;
     foaf:age "15" .
+
+<Bipedidae> rdfs:subClassOf <Animal> .
+
+<Quadruped> rdfs:subClassOf <Animal> .
 
