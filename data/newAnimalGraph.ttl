@@ -1,0 +1,48 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://animal.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:Animal a rdfs:Class .
+
+ns1:Person a rdfs:Class .
+
+ns1:Daphne a ns1:Farmer ;
+    rdfs:label "Daphne the farmer" ;
+    ns1:feedsFish ns1:Penguin ;
+    ns1:feedsGrass ns1:Chicken,
+        ns1:Pig .
+
+ns1:Dog a ns1:Cattle ;
+    rdfs:label "Keffer" ;
+    foaf:age "3" .
+
+ns1:Zebra a ns1:Cattle ;
+    rdfs:label "Jozef" ;
+    foaf:age "15" .
+
+ns1:feedsFish rdfs:subPropertyOf ns1:feeds .
+
+ns1:feedsGrass rdfs:subPropertyOf ns1:feeds .
+
+ns1:Chicken a ns1:Cattle ;
+    rdfs:label "Mary" ;
+    foaf:age "9" .
+
+ns1:Penguin a ns1:Cattle ;
+    rdfs:label "Ans" ;
+    foaf:age "10" .
+
+ns1:Pig a ns1:Cattle ;
+    rdfs:label "Billy" ;
+    foaf:age "3" .
+
+ns1:Farmer ns1:feeds ns1:Cattle ;
+    rdfs:subClassOf ns1:Person .
+
+ns1:feeds a rdf:Property ;
+    rdfs:domain ns1:Farmer ;
+    rdfs:range ns1:Cattle .
+
+ns1:Cattle rdfs:subClassOf ns1:Animal .
+

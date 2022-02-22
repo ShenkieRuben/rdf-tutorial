@@ -1,0 +1,20 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://animal.com/Animal> a rdfs:Class .
+
+<http://animal.com/Chicken> rdfs:label "Mary" ;
+    foaf:age "9" .
+
+<http://animal.com/Dog> rdfs:label "Keffer" ;
+    foaf:age "3" .
+
+<http://animal.com/Penguin> rdfs:label "Ans" ;
+    foaf:age "10" .
+
+<http://animal.com/Pig> rdfs:label "Billy" ;
+    foaf:age "3" .
+
+<http://animal.com/Zebra> rdfs:label "Jozef" ;
+    foaf:age "15" .
+

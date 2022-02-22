@@ -1,0 +1,130 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://animal.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ns1:Animal a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:Animal,
+        rdfs:Resource .
+
+ns1:Person a rdfs:Class,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:Person,
+        rdfs:Resource .
+
+ns1:Daphne a ns1:Farmer,
+        ns1:Person,
+        rdfs:Resource ;
+    rdfs:label "Daphne the farmer" ;
+    ns1:feeds ns1:Chicken,
+        ns1:Penguin,
+        ns1:Pig ;
+    ns1:feedsFish ns1:Penguin ;
+    ns1:feedsGrass ns1:Chicken,
+        ns1:Pig .
+
+ns1:Dog a ns1:Animal,
+        ns1:Cattle,
+        rdfs:Resource ;
+    rdfs:label "Keffer" ;
+    foaf:age "3" .
+
+ns1:Zebra a ns1:Animal,
+        ns1:Cattle,
+        rdfs:Resource ;
+    rdfs:label "Jozef" ;
+    foaf:age "15" .
+
+ns1:feedsFish a rdf:Property,
+        rdfs:Resource ;
+    rdfs:subPropertyOf ns1:feeds,
+        ns1:feedsFish .
+
+ns1:feedsGrass a rdf:Property,
+        rdfs:Resource ;
+    rdfs:subPropertyOf ns1:feeds,
+        ns1:feedsGrass .
+
+rdf:type a rdf:Property ;
+    rdfs:subPropertyOf rdf:type .
+
+rdfs:domain a rdf:Property ;
+    rdfs:subPropertyOf rdfs:domain .
+
+rdfs:label a rdf:Property ;
+    rdfs:subPropertyOf rdfs:label .
+
+rdfs:range a rdf:Property ;
+    rdfs:subPropertyOf rdfs:range .
+
+rdfs:subClassOf a rdf:Property ;
+    rdfs:subPropertyOf rdfs:subClassOf .
+
+rdfs:subPropertyOf a rdf:Property ;
+    rdfs:subPropertyOf rdfs:subPropertyOf .
+
+foaf:age a rdf:Property ;
+    rdfs:subPropertyOf foaf:age .
+
+"10" a rdfs:Resource .
+
+"15" a rdfs:Resource .
+
+"9" a rdfs:Resource .
+
+"Ans" a rdfs:Resource .
+
+"Billy" a rdfs:Resource .
+
+"Daphne the farmer" a rdfs:Resource .
+
+"Jozef" a rdfs:Resource .
+
+"Keffer" a rdfs:Resource .
+
+"Mary" a rdfs:Resource .
+
+ns1:Chicken a ns1:Animal,
+        ns1:Cattle,
+        rdfs:Resource ;
+    rdfs:label "Mary" ;
+    foaf:age "9" .
+
+ns1:Penguin a ns1:Animal,
+        ns1:Cattle,
+        rdfs:Resource ;
+    rdfs:label "Ans" ;
+    foaf:age "10" .
+
+ns1:Pig a ns1:Animal,
+        ns1:Cattle,
+        rdfs:Resource ;
+    rdfs:label "Billy" ;
+    foaf:age "3" .
+
+rdfs:Class a rdfs:Resource .
+
+"3" a rdfs:Resource .
+
+ns1:Farmer a ns1:Farmer,
+        ns1:Person,
+        rdfs:Resource ;
+    ns1:feeds ns1:Cattle ;
+    rdfs:subClassOf ns1:Person,
+        rdfs:Resource .
+
+ns1:feeds a rdf:Property,
+        rdfs:Resource ;
+    rdfs:domain ns1:Farmer ;
+    rdfs:range ns1:Cattle ;
+    rdfs:subPropertyOf ns1:feeds .
+
+ns1:Cattle a ns1:Animal,
+        ns1:Cattle,
+        rdfs:Resource ;
+    rdfs:subClassOf ns1:Animal,
+        rdfs:Resource .
+
+rdf:Property a rdfs:Resource .
+
