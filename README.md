@@ -2,7 +2,7 @@
 
 
 Assignment 1: RDF, RDFS and OWL
-Goal: create a webapplication for a restaurant to help chefs manage their recipes. 
+Goal: create a webapplication for a restaurant to help chefs manage their recipes, and help radio program makers with the management of their music database. 
 
 part 1: RDF (discussed in lecture 2) 
 Go through the notebook [rdf-tutorial](rdf-tutorial.ipynb)
@@ -14,3 +14,6 @@ part 3: OWL (discussed in lecture 4) (to be updated)
 Try out the notebook [OWL-tutorial](OWL-tutorial.ipynb) 
 
 The ./data/ingredients.rdf and ./data/recipes.rdf are based on the github repo: https://github.com/foodkg/foodkg.github.io.git
+
+The ./data/musicoset_metadata/ files are downloaded from: https://marianaossilva.github.io/DSW2019/#tables
+
