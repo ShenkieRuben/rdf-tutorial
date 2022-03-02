@@ -10,7 +10,7 @@ select ?label where {
 } order by asc(?label)
 
 
-QUERY 2: select all recipes meant for dinner
+QUERY 2: select all recipes meant for dinner and lunch
 PREFIX wtm: <http://purl.org/heals/food/>
 select * where { 
     ?s wtm:isRecommendedForMeal wtm:Dinner, wtm:Lunch
