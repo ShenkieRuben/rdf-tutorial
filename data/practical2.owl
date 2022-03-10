@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:onto="http://www.art.com/onto/"
+         xmlns="http://www.art.com/onto/">
+
+<owl:Ontology rdf:about="http://www.art.com/onto"/>
+
+<owl:ObjectProperty rdf:about="paints">
+  <rdfs:domain rdf:resource="Painter"/>
+  <rdfs:range rdf:resource="Painting"/>
+  <owl:inverseOf rdf:resource="isPaintedBy"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="bornIn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="Painter"/>
+  <rdfs:range rdf:resource="City"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="isPaintedBy">
+  <rdfs:domain rdf:resource="Painting"/>
+  <rdfs:range rdf:resource="Painter"/>
+  <owl:inverseOf rdf:resource="paints"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="inStyle">
+  <rdfs:domain rdf:resource="Painting"/>
+  <rdfs:range rdf:resource="Movement"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="isIn">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="birthDate">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="Painter"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="Painter">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="Movement">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="Painting">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="Museum">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="Country">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="City">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="US">
+  <rdfs:subClassOf rdf:resource="Country"/>
+</owl:Class>
+
+<owl:Class rdf:about="Spain">
+  <rdfs:subClassOf rdf:resource="Country"/>
+</owl:Class>
+
+<owl:Class rdf:about="France">
+  <rdfs:subClassOf rdf:resource="Country"/>
+</owl:Class>
+
+<owl:Class rdf:about="Italy">
+  <rdfs:subClassOf rdf:resource="Country"/>
+</owl:Class>
+
+<owl:Class rdf:about="Holland">
+  <rdfs:subClassOf rdf:resource="Country"/>
+</owl:Class>
+
+<onto:Movement rdf:about="Impressionism">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</onto:Movement>
+
+<onto:Movement rdf:about="Renaissance">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</onto:Movement>
+
+<onto:Movement rdf:about="Cubism">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</onto:Movement>
+
+<onto:US rdf:about="Verenigde_Staten">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</onto:US>
+
+<onto:Spain rdf:about="Spanje">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</onto:Spain>
+
+<onto:France rdf:about="Frankrijk">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</onto:France>
+
+<onto:Holland rdf:about="Nederland">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</onto:Holland>
+
+<onto:Italy rdf:about="Italië">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</onto:Italy>
+
+<onto:City rdf:about="Washington">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Verenigde_Staten"/>
+</onto:City>
+
+<onto:City rdf:about="Madrid">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Spanje"/>
+</onto:City>
+
+<onto:City rdf:about="Paris">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Frankrijk"/>
+</onto:City>
+
+<onto:City rdf:about="New_York">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Verenigde_Staten"/>
+</onto:City>
+
+<onto:City rdf:about="Zundert">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Nederland"/>
+</onto:City>
+
+<onto:City rdf:about="Florence">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Italië"/>
+</onto:City>
+
+<onto:City rdf:about="Limoges">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Frankrijk"/>
+</onto:City>
+
+<onto:City rdf:about="Malaga">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Spanje"/>
+</onto:City>
+
+<onto:Museum rdf:about="MOMA">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="New_York"/>
+</onto:Museum>
+
+<onto:Museum rdf:about="Louvre">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Paris"/>
+</onto:Museum>
+
+<onto:Museum rdf:about="Phillips_Collection">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Washington"/>
+</onto:Museum>
+
+<onto:Museum rdf:about="Reina_Sofia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:isIn rdf:resource="Madrid"/>
+</onto:Museum>
+
+<onto:Painting rdf:about="Starry_Night">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:inStyle rdf:resource="Impressionism"/>
+  <onto:isIn rdf:resource="MOMA"/>
+</onto:Painting>
+
+<onto:Painting rdf:about="La_Gioconda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:inStyle rdf:resource="Renaissance"/>
+  <onto:isIn rdf:resource="Louvre"/>
+</onto:Painting>
+
+<onto:Painting rdf:about="Luncheon_of_the_Boating_Party">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:inStyle rdf:resource="Impressionism"/>
+  <onto:isIn rdf:resource="Phillips_Collection"/>
+</onto:Painting>
+
+<onto:Painting rdf:about="Guernica">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:inStyle rdf:resource="Cubism"/>
+  <onto:isIn rdf:resource="Reina_Sofia"/>
+</onto:Painting>
+
+<onto:Painter rdf:about="Van_Gogh">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:bornIn rdf:resource="Zundert"/>
+  <onto:paints rdf:resource="Starry_Night"/>
+  <onto:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1853-03-30</onto:birthDate>
+</onto:Painter>
+
+<onto:Painter rdf:about="Da_Vinci">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:bornIn rdf:resource="Florence"/>
+  <onto:paints rdf:resource="La_Gioconda"/>
+  <onto:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1452-04-15</onto:birthDate>
+</onto:Painter>
+
+<onto:Painter rdf:about="Renoir">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:bornIn rdf:resource="Limoges"/>
+  <onto:paints rdf:resource="Luncheon_of_the_Boating_Party"/>
+  <onto:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1841-02-25</onto:birthDate>
+</onto:Painter>
+
+<onto:Painter rdf:about="Picasso">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:bornIn rdf:resource="Malaga"/>
+  <onto:paints rdf:resource="Guernica"/>
+  <onto:birthDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1881-10-25</onto:birthDate>
+</onto:Painter>
+
+
+</rdf:RDF>

@@ -1,3 +1,5 @@
+from mailbox import MaildirMessage
+from opcode import haslocal
 from unicodedata import name
 import pandas as pd
 from rdflib import Graph, Literal, Namespace, RDF, URIRef, OWL
@@ -22,7 +24,25 @@ with onto:
     class Museum(Thing):
         pass
 
-    class Location(Thing):
+    class Country(Thing):
+        pass
+
+    class City(Thing):
+        pass
+
+    class US(Country):
+        pass
+
+    class Spain(Country):
+        pass
+
+    class France(Country):
+        pass
+
+    class Italy(Country):
+        pass
+
+    class Holland(Country):
         pass
 
     # Properties
@@ -30,11 +50,11 @@ with onto:
     class paints(Painter >> Painting):
         pass
 
-    class bornIn(DataProperty, FunctionalProperty):
+    class bornIn(ObjectProperty, FunctionalProperty):
         domain = [Painter]
-        range = [Location]
+        range = [City]
 
-    class birthDate(Painter >> str):
+    class birthDate(Painter >> str, FunctionalProperty):
         pass
 
     # Painting --> ...
@@ -44,61 +64,70 @@ with onto:
     class inStyle(Painting >> Movement):
         pass
 
-    class locatedIn(Painting >> Museum):
+    class isIn(Thing >> Thing, TransitiveProperty):
         pass
 
-    class located(Museum >> Location):
-        pass
+    # 4 Links to linked open data
+    # https://dbpedia.org/page/Pablo_Picasso --> Pablo Picasso
+    # https://dbpedia.org/page/Impressionism --> Impressionism
+    # https://dbpedia.org/page/The_Starry_Night --> Starry Night
+    # https://dbpedia.org/page/Louvre --> Louvre Museum
 
+    # Note that in my ontology, for simplicity's sake, all the data from the tables are literals. I am aware of the fact that we can turn these literals into subclasses and then use owl:sameAs statements to link them with resources from LOD.
 
-# 4 Links to linked open data
-# https://dbpedia.org/page/Pablo_Picasso --> Pablo Picasso
-# https://dbpedia.org/page/Impressionism --> Impressionism
-# https://dbpedia.org/page/The_Starry_Night --> Starry Night
-# https://dbpedia.org/page/Louvre --> Louvre Museum
+    # Now for the instances
 
-# Note that in my ontology, for simplicity's sake, all the data from the tables are literals. I am aware of the fact that we can turn these literals into subclasses and then use owl:sameAs statements to link them with resources from LOD.
+    # Movements
+    impressionism = Movement(name="Impressionism")
+    renaissance = Movement(name="Renaissance")
+    cubism = Movement(name="Cubism")
 
-# Now for the instances
+    # Countries
+    us = US("Verenigde_Staten")
+    spain = Spain("Spanje")
+    france = France("Frankrijk")
+    holland = Holland("Nederland")
+    italy = Italy("Italië")
 
-# Locations
-zundert = Location(name="Zundert")
-florence = Location(name="Florence")
-limoges = Location(name="Limoges")
-malaga = Location(name="Malaga")
+    # Cities
+    washington = City("Washington", isIn=[us])
+    madrid = City("Madrid", isIn=[spain])
+    paris = City("Paris", isIn=[france])
+    new_york = City("New_York", isIn=[us])
 
-new_york = Location(name="New York")
-paris = Location(name="Paris")
-washington = Location(name="Washington")
-madrid = Location(name="Madrid")
+    # Birth places
+    zundert = City("Zundert", isIn=[holland])
+    florence = City("Florence", isIn=[italy])
+    limoges = City("Limoges", isIn=[france])
+    malaga = City("Malaga", isIn=[spain])
 
-# Movements
-impressionism = Movement(name="Impressionism")
-renaissance = Movement(name="Renaissance")
-cubism = Movement(name="Cubism")
+    # # Museums
+    moma = Museum(name="MOMA", isIn=[new_york])
+    louvre = Museum(name="Louvre", isIn=[paris])
+    pc = Museum(name="Phillips_Collection", isIn=[washington])
+    rs = Museum(name="Reina_Sofia", isIn=[madrid])
 
-# Museums
-moma = Museum(name="MOMA", located=new_york)
-louvre = Museum(name="Louvre", located=paris)
-pc = Museum(name="Phillips Collection", located=washington)
-rs = Museum(name="Reina Sofia", located=madrid)
+    starry_night = Painting(name="Starry_Night", inStyle=[impressionism], isIn=[moma])
+    la_gioconda = Painting(name="La_Gioconda", inStyle=[renaissance], isIn=[louvre])
+    luncheon = Painting(
+        name="Luncheon_of_the_Boating_Party", inStyle=[impressionism], isIn=[pc]
+    )
+    guernica = Painting(name="Guernica", inStyle=[cubism], isIn=[rs])
 
+    van_gogh = Painter(
+        name="Van_Gogh",
+        birthDate="1853-03-30",
+        bornIn=zundert,
+        paints=[starry_night],
+    )
+    da_vinci = Painter(
+        name="Da_Vinci", birthDate="1452-04-15", bornIn=florence, paints=[la_gioconda]
+    )
+    renoir = Painter(
+        name="Renoir", birthDate="1841-02-25", bornIn=limoges, paints=[luncheon]
+    )
+    picasso = Painter(
+        name="Picasso", birthDate="1881-10-25", bornIn=malaga, paints=[guernica]
+    )
 
-starry_night = Painting(Name="Starry Night", inStyle=impressionism, locatedIn=moma)
-la_gioconda = Painting(Name="La Gioconda", inStyle=renaissance, locatedIn=louvre)
-luncheon = Painting(
-    name="Luncheon of the Boating Party", inStyle=impressionism, locatedIn=pc
-)
-guernica = Painting(name="Guernica", inStyle=cubism, locatedIn=rs)
-
-
-van_gogh = Painter(
-    name="Van Gogh", birthDate="1853-03-30", bornIn=zundert, paints=starry_night
-)
-da_vinci = Painter(
-    name="Da Vinci", birthDate="1452-04-15", bornIn=florence, paints=la_gioconda
-)
-renoir = Painter(name="Renoir", birthDate="1841-02-25", bornIn=limoges, paints=luncheon)
-picasso = Painter(
-    name="Picasso", birthDate="1881-10-25", bornIn=malaga, paints=guernica
-)
+    onto.save("./data/practical2.owl")
