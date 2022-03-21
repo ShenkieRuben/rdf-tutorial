@@ -16,7 +16,7 @@ Try out the notebook [OWL-tutorial](OWL-tutorial.ipynb)
 
 Tutorial Entity Linking and Relation Extraction:
 [Slides](https://docs.google.com/presentation/d/1wtjZ40dJqWiKyxgsJgApVtcjN_1567MF6RNXHL4eg-s/edit?usp=sharing)
-[Google Colab notebook]https://colab.research.google.com/drive/1-JDcOIHeWDd0Wj21RjtcUgEyOayUjiNf?usp=sharing)
+[Google Colab notebook](https://colab.research.google.com/drive/1-JDcOIHeWDd0Wj21RjtcUgEyOayUjiNf?usp=sharing)
 
 
 The ./data/ingredients.rdf and ./data/recipes.rdf are based on the github repo: https://github.com/foodkg/foodkg.github.io.git
