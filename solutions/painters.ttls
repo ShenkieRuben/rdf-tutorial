@@ -1,0 +1,114 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ex: <https://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbo: <https://dbpedia.org/ontology/> .
+
+ex:MOMA a ex:Museum;
+  rdfs:label "MOMA";
+  ex:locatedIn ex:new_york .
+
+ex:locatedIn a owl:TransitiveProperty, owl:ObjectProperty .
+dbo:birthDate a owl:FunctionalProperty .
+ex:paintedBy owl:inverseOf ex:painted .
+
+ex:new_york a ex:Location;
+  rdfs:label "New York";
+  ex:locatedIn ex:united_states .
+
+ex:cubism a ex:Movement;
+  rdfs:label "Cubism" .
+
+ex:florence a ex:Location;
+  rdfs:label "Florence" .
+
+ex:guernica a ex:Painting;
+  rdfs:label "Guernica";
+  ex:displayedAt ex:reina_sofia .
+
+ex:reina_sofia a ex:Museum;
+  rdfs:label "Reina Sofia";
+  ex:locatedIn ex:madrid .
+
+ex:impressionism a ex:Movement;
+  rdfs:label "Impressionism" .
+
+ex:la_gioconda a ex:Painting;
+  rdfs:label "La Gioconda";
+  ex:displayedAt ex:louvre .
+
+ex:louvre a ex:Museum;
+  rdfs:label "Louvre";
+  ex:locatedIn ex:paris .
+
+ex:limoges a ex:Location;
+  rdfs:label "Limoges" .
+
+ex:paris a ex:Location;
+  rdfs:label "Paris" .
+
+ex:luncheon a ex:Painting;
+  rdfs:label "Luncheon of the Boating Party";
+  ex:displayedAt ex:phillips_collection .
+
+ex:phillips_collection a ex:Museum;
+  rdfs:label "Phillips Collection";
+  ex:locatedIn ex:washington .
+
+ex:madrid a ex:Location;
+  rdfs:label "Madrid" .
+
+ex:malaga a ex:Location;
+  rdfs:label "Malaga" .
+
+ex:united_states a ex:Location;
+  rdfs:label "United States" .
+
+ex:washington a ex:Location;
+  rdfs:label "Washington";
+  ex:locatedIn ex:united_states .
+
+ex:renaissance a ex:Movement;
+  rdfs:label "Renaissance" .
+
+ex:starry_night a ex:Painting;
+  rdfs:label "Starry Night";
+  ex:displayedAt ex:MOMA .
+
+ex:zundert a ex:Location;
+  rdfs:label "Zundert" .
+
+ex:da_vinci a ex:Painter;
+  dbo:birthDate "1452-04-15"^^xsd:date;
+  dbo:birthPlace ex:florence;
+  ex:lastName "da Vinci";
+  ex:movement ex:renaissance;
+  ex:painted ex:la_gioconda .
+
+ex:picasso a ex:Painter;
+  dbo:birthDate "1881-10-25"^^xsd:date;
+  dbo:birthPlace ex:malaga;
+  ex:lastName "Picasso";
+  ex:movement ex:cubism;
+  ex:painted ex:guernica .
+
+ex:renoir a ex:Painter;
+  dbo:birthDate "1881-10-25"^^xsd:date;
+  dbo:birthPlace ex:limoges;
+  ex:lastName "Renoir";
+  ex:movement ex:impressionism;
+  ex:painted ex:luncheon .
+
+ex:van_gogh a ex:Painter;
+  dbo:birthDate "1853-03-30"^^xsd:date;
+  dbo:birthPlace ex:zundert;
+  ex:lastName "van Gogh";
+  ex:movement ex:impressionism;
+  ex:painted ex:starry_night;
+  ex:livesIn ex:nuenen .
+
+ex:painted owl:inverseOf ex:paintedBy .
+
+<<ex:van_gogh ex:livesIn ex:nuenen>> ex:from "1883-01-01"^^xsd:date;
+  ex:until "1885-01-01"^^xsd:date .
